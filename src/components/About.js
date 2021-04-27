@@ -1,5 +1,5 @@
 import React from 'react';
-import profile from '../assests/images/profile.jpeg';
+import profile from '../assests/images/profile.jpg';
 import '../scss/main.scss';
 import Button from '@material-ui/core/Button';
 import GetAppIcon from '@material-ui/icons/GetApp';
