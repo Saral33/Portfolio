@@ -1,0 +1,126 @@
+.heading-primary{
+    color: $white;
+    backface-visibility: hidden;
+    margin-bottom: 1.5rem;
+    
+    &--main{
+        display: block;
+        font-size: 5.5rem;
+        letter-spacing: 0.5rem;
+        font-weight: 400;
+        margin-bottom: 2.3rem;
+        animation-name: moveFromTop;
+        animation-duration: 1s;
+        @media only screen and (max-width: 670px) {
+            font-size: 3.5rem;
+            letter-spacing: 0.3rem;
+        }
+        @media only screen and (max-width: 450px) {
+            font-size: 3.3rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &--sub{
+        display: block;
+        font-size: 4.5rem;
+        font-weight: 400;
+        letter-spacing: 0.5rem;  
+        animation-name: moveFromTop;
+        animation-duration: 1s;
+        @media only screen and (max-width: $bp-small) {
+            font-size: 3rem;
+            letter-spacing: 0.3rem;
+        }
+        @media only screen and (max-width: 671px) {
+            font-size: 3.2rem;
+            letter-spacing: 0.3rem;}
+        @media only screen and (max-width: 450px) {
+            font-size: 2.7rem;
+        }
+    }
+}
+
+.btn{
+    margin-top:5rem; 
+}
+
+.contact-btn{
+    background-color: #c0392b;
+    padding: 1.2rem 4rem;
+    color: blanchedalmond;
+    text-decoration: none;
+    margin-top: 2.5rem;
+    font-size: 1.6rem;
+    border-radius: 1.5rem;
+    transition: all 0.2s;
+    &:hover{
+        background-color: #e74c3c;
+        color: white;
+    }
+}
+
+
+@keyframes moveFromTop{
+    0%{
+        opacity: 0;
+        transform: translateY(-10rem);
+    }
+
+    80%{
+        transform: translateY(1rem);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.section-header{
+    font-family: 'Open Sans';
+    text-align: center;
+    color: #bd5d38;
+    font-size: 3.2rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.container__heading{
+    font-size: 2.4rem;
+    color: #0e2431
+}
+
+i{
+    font-size: 3rem;
+}
+
+.social-media-links{
+    width: 40%;
+    margin-top: 5rem;
+    margin-left: -2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-icons-fb{
+   @include social-icons;
+    &:hover{
+        color: #3b5999;
+    }
+}
+
+.social-icons-linkedin{
+    @include social-icons;
+    &:hover{
+        color: #0077B5;
+    }
+}
+
+.social-icons-github{
+    @include social-icons;
+    &:hover{
+        color: #4078c0;
+    }
+}
+

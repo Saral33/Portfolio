@@ -1,0 +1,17 @@
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+@mixin section{
+    padding: 8rem 0;
+    background-color: #e8eaeb;
+}
+
+@mixin social-icons {
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s;
+}

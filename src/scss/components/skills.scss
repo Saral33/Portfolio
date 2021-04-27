@@ -1,0 +1,59 @@
+.section-skills{
+    @include section;
+    background-color: rgba(235, 233, 233, 0.349);
+
+    &__container{
+        margin: 6rem 16.3rem 0 16.3rem;
+        display: flex;
+        justify-content: space-around;
+        @media only screen and (max-width: 1000px){
+            margin: 5rem 10rem 0 10rem;
+        }
+        @media only screen and (max-width: 850px){
+            margin: 4rem 5rem 0 5rem;
+        }
+        @media only screen and (max-width: 750px){
+            flex-direction: column;
+        }
+    }
+}
+
+.container__languages{
+    
+
+    &-skills{
+        list-style: none;
+        margin-top: 3rem;
+
+        & li{
+            margin-bottom: 2rem;
+            padding: 5px;
+        }
+    }
+}
+
+
+.languages{
+    display: flex;
+    align-items: center;
+    background-color: rgba(39, 5, 5, 0.041);
+    border-radius: 3rem;
+    width: 100%;
+
+    & span{
+        font-size: 1.7rem;
+        margin-left: 2rem;
+    }
+}
+
+.container__heading{
+    @media only screen and (max-width: 750px){
+       text-align: center;
+    }
+}
+.container__library{
+    @media only screen and (max-width: 750px){
+       margin-top: 5rem;
+    }
+}
+
