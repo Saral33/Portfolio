@@ -17,7 +17,7 @@ const About = () => {
                 <div className="about-text">
                     <h3 className="about-text-primary">Myself</h3>
                     <p className="about-text-secondary">
-                        My name is Saral Karki. I am currently studying Bachelor's degree at computer science and information technology at Patan Multiple Campus. My dream is to be a software developer. Learning is my passion. I love to learn new things.
+                       A web developer with a passion in developing the MERN Stack and  loves working with software that matters.
                 </p>
                  <Button
             style={{fontSize:'14px', marginTop:'25px'}}
