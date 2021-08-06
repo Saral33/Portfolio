@@ -3,12 +3,46 @@ import '../scss/main.scss';
 import connect from '../assests/images/connect.png';
 import eyifa from '../assests/images/e-yifa.png';
 import mobyletech from '../assests/images/mobyle.png';
+import chat from '../assests/images/chat.png';
 
 const Projects = () => {
   return (
     <div data-aos="zoom-in" className="projects section-projects">
       <div className="section-header"> Projects</div>
       <div className="container-box">
+        <div className="projects-box">
+          <div className="image">
+            <img className="project-image" src={chat} alt="" />
+          </div>
+          <div className="description">
+            <div className="name">
+              Name:{' '}
+              <a
+                target="blank"
+                style={{ textDecoration: 'none' }}
+                href="https://hello1chat.herokuapp.com/"
+              >
+                Hello Chat
+              </a>
+            </div>
+            <div className="name">
+              Language and tools used: Node.js, Socket.io, express
+            </div>
+            <div className="name">
+              Description: Chat app where user can join chat room and chat with
+              more than two people. Supports real-time chat.
+            </div>
+            <div className="name">
+              <a
+                target="blank"
+                style={{ textDecoration: 'none' }}
+                href="https://hello1chat.herokuapp.com/"
+              >
+                Click to view
+              </a>
+            </div>
+          </div>
+        </div>
         <div className="projects-box">
           <div className="image">
             <img className="project-image" src={connect} alt="" />
