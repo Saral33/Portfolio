@@ -74,9 +74,7 @@
 
 .about-btn {
   background-color: #273c75;
-  display: flex;
-  align-items: center;
-
+  display: inline-block;
   border-radius: 10rem;
   padding: 1.5rem;
   border: none;
@@ -84,5 +82,6 @@
   cursor: pointer;
   &:hover {
     background-color: #020111;
+    transform: scale(1.2);
   }
 }
