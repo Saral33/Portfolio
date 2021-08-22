@@ -1,108 +1,73 @@
 import React from 'react';
 import '../scss/main.scss';
+import Languages from '../utils/Languages';
+import { ReactComponent as HtmlLogo } from '../assests/svg logos/html.svg';
+import { ReactComponent as CssLogo } from '../assests/svg logos/css.svg';
+import { ReactComponent as JsLogo } from '../assests/svg logos/js.svg';
+import { ReactComponent as NodeJsLogo } from '../assests/svg logos/node.svg';
+import { ReactComponent as ReactJsLogo } from '../assests/svg logos/react.svg';
+import { ReactComponent as NextJsLogo } from '../assests/svg logos/next.svg';
+import { ReactComponent as SassLogo } from '../assests/svg logos/sass.svg';
+import { ReactComponent as ReduxLogo } from '../assests/svg logos/redux.svg';
+import { ReactComponent as BootStrapLogo } from '../assests/svg logos/bootstrap.svg';
+import { ReactComponent as ExpressLogo } from '../assests/svg logos/express.svg';
+import { ReactComponent as MongoDBLogo } from '../assests/svg logos/mongodb.svg';
+import { ReactComponent as SocketLogo } from '../assests/svg logos/socket.svg';
 
 const Skills = () => {
   return (
-    <div data-aos="zoom-in" className="section-skills skills">
-      <div className="section-header">Skills</div>
-      <div className="section-skills__container">
-        <div className="container__languages">
-          <div className="container__heading">
-            {' '}
-            <h3> Languages / Frameworks</h3>
-          </div>
-
-          <ul className="container__languages-skills">
-            <li className="languages">
-              <i className="icon devicon-html5-plain colored"></i>
-              <span>HTML5</span>
-            </li>
-            <li className="languages">
-              <i className="icon devicon-css3-plain colored"></i>
-              <span>CSS3</span>
-            </li>
-            <li className="languages">
-              <i className="icon devicon-javascript-plain colored"></i>
-              <span>Javascript</span>
-            </li>
-            <li className="languages">
-              <i className="icon devicon-react-original colored"></i>
-              <span>React.JS</span>
-            </li>
-            <li className="languages">
-              <i className="icon devicon-redux-original colored"></i>
-              <span>Redux</span>
-            </li>
-            <li className="languages">
-              <i class="icon devicon-nextjs-line colored"></i>
-              <span>Next.JS</span>
-            </li>
-            <li className="languages">
-              <i className="icon devicon-react-plain colored"></i>
-              <span>React Native</span>
-            </li>
-            <li className="languages">
-              <i className="icon devicon-nodejs-plain colored"></i>
-              <span>Node.JS</span>
-            </li>
-            <li className="languages">
-              <i className="icon devicon-typescript-plain colored"></i>
-              <span>Typescript</span>
-            </li>
-            <li className="languages">
-              <i className="icon devicon-mongodb-plain-wordmark colored"></i>
-              <span>Mongo DB</span>
-            </li>
-          </ul>
+    <div className="section-skills skills">
+      <div style={{ color: '#fff' }} className="section-header">
+        Skills
+      </div>
+      <div
+        data-aos="zoom-in"
+        style={{ marginTop: '40px' }}
+        className="skills__languages__container"
+      >
+        <div className="skills__heading">
+          Programming Languages / Frameworks
         </div>
-        <div className="container__languages container__library">
-          <div className="container__heading">
-            {' '}
-            <h3>Design libraries, IDE , &amp; Tools</h3>
-          </div>
-
-          <ul className="container__languages-skills">
-            <li className="languages">
-              <i className="icon devicon-bootstrap-plain colored"></i>
-              <span>Bootstrap</span>
-            </li>
-            <li className="languages">
-              <i className="icon devicon-sass-original colored"></i>
-              <span>SASS</span>
-            </li>
-            <li className="languages">
-              <i className="icon devicon-materialui-plain colored"></i>
-              <span>Material UI</span>
-            </li>
-            <li className="languages">
-              <i className="icon devicon-vscode-plain colored"></i>
-              <span>Visual Studio Code</span>
-            </li>
-            <li className="languages">
-              <i className="icon devicon-git-plain colored"></i>
-              <span>Git</span>
-            </li>
-            <li className="languages">
-              <i className="icon devicon-github-original colored"></i>
-              <span>Github</span>
-            </li>
-            <li className="languages">
-              <i className="icon devicon-npm-original-wordmark colored"></i>
-              <span>NPM Packages</span>
-            </li>
-            <li className="languages">
-              <i className="icon devicon-heroku-plain colored"></i>
-              <span>Heroku</span>
-            </li>
-            <li className="languages">
-              <i className="icon devicon-codepen-plain colored"></i>
-              <span>Code Pen</span>
-            </li>
-            <li className="languages">
-              <i className="icon devicon-firebase-plain colored"></i>
-              <span>Firebase</span>
-            </li>
-          </ul>
+        <div className="languages__container">
+          <Languages title="HTML5">
+            <HtmlLogo className="languages__logo" />
+          </Languages>
+          <Languages title="CSS3">
+            <CssLogo className="languages__logo" />
+          </Languages>
+          <Languages title="JavaScript">
+            <JsLogo className="languages__logo" />
+          </Languages>
+          <Languages title="Node.JS">
+            <NodeJsLogo className="languages__logo" />
+          </Languages>
+          <Languages title="React.JS">
+            <ReactJsLogo className="languages__logo" />
+          </Languages>
+          <Languages title="Next.JS">
+            <NextJsLogo className="languages__logo" />
+          </Languages>
+        </div>
+        <div className="skills__heading"> Libraries / DataBase</div>
+        <div className="languages__container">
+          <Languages title="Sass">
+            <SassLogo className="languages__logo" />
+          </Languages>
+          <Languages title="BootStrap">
+            <BootStrapLogo className="languages__logo" />
+          </Languages>
+          <Languages title="Redux">
+            <ReduxLogo className="languages__logo" />
+          </Languages>
+          <Languages title="Express">
+            <ExpressLogo className="languages__logo" />
+          </Languages>
+          <Languages title="MongoDB">
+            <MongoDBLogo className="languages__logo" />
+          </Languages>
+          <Languages title="Socket.Io">
+            <SocketLogo className="languages__logo" />
+          </Languages>
         </div>
       </div>
     </div>

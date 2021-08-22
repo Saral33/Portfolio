@@ -1,5 +1,5 @@
 import React from 'react';
-import profile from '../assests/images/profile.png';
+import profile from '../assests/images/profile.jpg';
 import { ReactComponent as Download } from '../assests/assets/download.svg';
 import '../scss/main.scss';
 
@@ -7,18 +7,24 @@ import CV from '../assests/CV.docx';
 
 const About = () => {
   return (
-    <div data-aos="zoom-in-down" className="section-about" id="about">
-      <div className="section-header"> About</div>
-      <div className="section-about__container">
+    <div className="section-about" id="about">
+      <div className="section-header"> About Me</div>
+      <div data-aos="zoom-in-down" className="section-about__container">
         <div className="about-image">
-          <img className="profile-pic" src={profile} alt="profile" />
+          <div className="profile-pic-container">
+            <img className="profile-pic" src={profile} alt="profile" />
+          </div>
         </div>
         <div className="about-text">
-          <h3 className="about-text-primary">Myself</h3>
           <p className="about-text-secondary">
-            A web developer with a passion in developing the MERN Stack and
-            loves working with software that matters.
-          </p>{' '}
+            I am a web developer with a passion in developing the MERN Stack and
+            loves working with software that matters. I get things done! I like
+            building beautiful websites, fast and useful applications. I am fast
+            learner, not afraid of taking my projects one step further, as I
+            never stop until I am satisfied with the result. I believe that the
+            little details are the key to a good website. I have worked both on
+            frontend and backend development. Have a look at my CV.
+          </p>
           <button
             className="about-btn"
             style={{ fontSize: '16px', marginTop: '25px' }}

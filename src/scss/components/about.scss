@@ -1,15 +1,15 @@
 .section-about {
-  background-color: #e8eaeb;
+  background-color: #fff;
   padding-top: 8rem;
 
   &__container {
-    padding: 6rem 35.3rem 6rem 30.3rem;
-    color: #fff;
+    padding: 6rem 31.3rem 6rem 30.3rem;
+
     margin-top: 3rem;
-    background-image: url('../../assests/images/about-bg.png');
+
     background-size: contain;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     @media only screen and (max-width: 1200px) {
       padding: 6rem 20rem 6rem 20rem;
@@ -29,18 +29,27 @@
 }
 
 .about-image {
-  flex: 0 0 20%;
+  display: flex;
+  justify-content: center;
+}
 
-  & img {
-    height: 30rem;
-  }
+.profile-pic-container {
+  width: 26rem;
+  height: 26rem;
+}
+
+.profile-pic {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
 }
 
 .about-text {
   flex: 1;
-  margin-left: 12rem;
-  margin-top: 3rem;
-  font-family: Open Sans;
+  margin-left: 4rem;
+  margin-top: 4rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
   @media only screen and (max-width: 705px) {
     margin-left: 3rem;
   }
@@ -62,6 +71,7 @@
 
   &-secondary {
     font-size: 1.9rem;
+    line-height: 3rem;
     @media only screen and (max-width: 600px) {
       font-size: 1.6rem;
     }
@@ -73,15 +83,15 @@
 }
 
 .about-btn {
-  background-color: #273c75;
+  background-color: #109e97;
   display: inline-block;
   border-radius: 10rem;
-  padding: 1.5rem;
+  padding: 1.5rem 1.7rem;
   border: none;
   transition: all 0.3s;
   cursor: pointer;
   &:hover {
-    background-color: #020111;
+    background-color: #109e97d8;
     transform: scale(1.2);
   }
 }

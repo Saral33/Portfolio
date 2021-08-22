@@ -7,9 +7,9 @@ import chat from '../assests/images/chat.png';
 
 const Projects = () => {
   return (
-    <div data-aos="zoom-in" className="projects section-projects">
+    <div className="projects section-projects">
       <div className="section-header"> Projects</div>
-      <div className="container-box">
+      <div data-aos="zoom-in" className="container-box">
         <div className="projects-box">
           <div className="image">
             <img className="project-image" src={chat} alt="" />
@@ -161,7 +161,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <p style={{ marginTop: '30px', textAlign: 'center', fontSize: '12px' }}>
+      <p style={{ marginTop: '70px', textAlign: 'center', fontSize: '15px' }}>
         Please see my{' '}
         <a
           target="blank"
@@ -171,20 +171,6 @@ const Projects = () => {
           github repos
         </a>
         , for more projects
-      </p>
-      <p style={{ marginTop: '30px', textAlign: 'center', fontSize: '12px' }}>
-        <strong>UI/UX Design by: Rohan Khadgi</strong>
-        <br />
-        <strong>
-          Check his profile at{' '}
-          <a
-            target="blank"
-            style={{ textDecoration: 'none' }}
-            href="https://behance.net/rk101"
-          >
-            here
-          </a>{' '}
-        </strong>
       </p>
     </div>
   );
