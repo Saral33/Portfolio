@@ -1,7 +1,8 @@
 .section-skills {
   @include section;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.856)),
-    url('../../assests/images/skills.jpg');
+  padding-top: -5rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.63)),
+    url('../../assests/images/skill.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -10,7 +11,7 @@
 
 .skills {
   &__heading {
-    margin-top: 2.5rem;
+    margin-top: 2.2rem;
     color: #fff;
     text-align: center;
     font-size: 2.6rem;
@@ -67,7 +68,7 @@
   width: 13.5rem;
   height: 13.5rem;
   border-radius: 50%;
-  background-color: #024e44a2;
+  background-color: #132930b6;
   @media only screen and (max-width: 850px) {
     width: 12rem;
     height: 12rem;
