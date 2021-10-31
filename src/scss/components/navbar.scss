@@ -16,6 +16,9 @@
 
   padding: 1.3rem;
   flex: 0 0 40%;
+  @media only screen and (max-width: $bp-small) {
+    flex: 0 0 60%;
+  }
 }
 
 .nav-options {
@@ -30,11 +33,11 @@
   display: none;
 }
 .option a {
-  transition: all 0.2s;
+  transition: all 0.5s;
   cursor: pointer;
 }
 .option :hover {
-  color: #718093;
+  color: #56667c;
 
   border-bottom: 1px solid #686de0;
 }
@@ -63,12 +66,16 @@
     grid-gap: 0px;
   }
   .nav-options.active {
-    background: #36740d;
+    background: rgb(22, 22, 22);
+    color: white;
+    font-size: 2rem;
+    height: 100%;
     left: 0;
     transition: all 0.5s ease;
     z-index: 1000;
     align-content: center;
     padding-left: 0px;
+    padding-top: 90px;
   }
 
   .menu-icon {

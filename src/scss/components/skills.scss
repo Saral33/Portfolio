@@ -24,14 +24,18 @@
 .languages {
   margin-left: 4rem;
   margin-top: 2rem;
-  transition: transform 1.2s ease-in-out;
+  transition: all 0.3s;
+
   &:hover {
     cursor: pointer;
-    transform: rotateY(360deg);
+    color: #fff202;
+    box-shadow: 0 0 35px #fdf111;
+    text-shadow: 0 0 35px #f3e812;
   }
 
   &__logo {
     width: 4.5rem;
+
     @media only screen and (max-width: 850px) {
       width: 3.5rem;
     }
