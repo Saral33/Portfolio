@@ -25,9 +25,7 @@ const Skills = () => {
         style={{ marginTop: '40px' }}
         className="skills__languages__container"
       >
-        <div className="skills__heading">
-          Programming Languages / Frameworks
-        </div>
+        <div className="skills__heading">Languages / Frameworks</div>
         <div className="languages__container">
           <Languages title="HTML5">
             <HtmlLogo className="languages__logo" />
