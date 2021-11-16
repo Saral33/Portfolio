@@ -3,6 +3,7 @@ import '../scss/main.scss';
 import connect from '../assests/images/connect.png';
 import eyifa from '../assests/images/e-yifa.png';
 import mobyletech from '../assests/images/mobyle.png';
+import hottaste from '../assests/images/hot-taste.png';
 import chat from '../assests/images/chat.png';
 
 const Projects = () => {
@@ -138,7 +139,7 @@ const Projects = () => {
               functionality, search suggestion, cart management, review/rate
               products, cloudinary image upload, google login, stripe payment,
               charts and statsistics for admin, admin dashboard, create new
-              products, approve orders
+              products, approve orders,zoom image.
             </div>
             <div className="name">
               <a
@@ -156,6 +157,43 @@ const Projects = () => {
                 href="https://www.youtube.com/watch?v=6n-CnAzQE6I"
               >
                 Video Demo
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="projects-box">
+          <div className="image">
+            <img className="project-image" src={hottaste} alt="" />
+          </div>
+          <div className="description">
+            <div className="name">
+              Name:{' '}
+              <a
+                target="blank"
+                style={{ textDecoration: 'none' }}
+                href="https://hot-taste-restaurant.vercel.app/"
+              >
+                Hot Taste Restaurant
+              </a>
+            </div>
+            <div className="name">
+              Language and tools Used: Next.js, Sass, MongoDB, Redux, Framer
+              motion, Next-Auth
+            </div>
+            <div className="name">
+              Description: Used Next.js for this app for SSR. This is fully
+              animated restaurant app. Used next-auth for authentication and
+              framer motion for awesome animation. Redux as a state management
+              and mongodb as a database. Used getServerSideProps for
+              pre-rendering a page whose data must be fetched at request time.
+            </div>
+            <div className="name">
+              <a
+                target="blank"
+                style={{ textDecoration: 'none' }}
+                href="https://hot-taste-restaurant.vercel.app/"
+              >
+                Click to view
               </a>
             </div>
           </div>

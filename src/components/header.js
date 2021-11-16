@@ -13,6 +13,7 @@ const Header = () => {
       <div className="header__text-box">
         <h1 className="heading-primary">
           <span className="heading-primary--main">Hi,</span>
+
           <span className="heading-primary--main">
             {' '}
             I'm <span style={{ color: '#e67e22' }}>Saral</span>

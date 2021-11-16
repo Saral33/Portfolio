@@ -49,6 +49,11 @@
 .project-image {
   height: 26rem;
   width: 50rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.02);
+  }
   @media only screen and (max-width: 500px) {
     width: 100%;
     height: auto;

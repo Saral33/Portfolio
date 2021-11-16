@@ -3,7 +3,7 @@ import profile from '../assests/images/profile.jpg';
 import { ReactComponent as Download } from '../assests/assets/download.svg';
 import '../scss/main.scss';
 
-import CV from '../assests/CV.docx';
+import CV from '../assests/cv.pdf';
 
 const About = () => {
   return (
