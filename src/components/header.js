@@ -2,14 +2,15 @@ import React from 'react';
 import Typewriter from 'typewriter-effect';
 import '../scss/main.scss';
 import Navbar from './navbar';
+import { Link } from 'react-scroll';
 
 const Header = () => {
   return (
-    <div className="header" id="home">
+    <div className="header " id="home">
       <div className="header__nav">
         <Navbar />
       </div>
-
+      <div className="wave"></div>
       <div className="header__text-box">
         <h1 className="heading-primary">
           <span className="heading-primary--main">Hi,</span>
@@ -27,10 +28,9 @@ const Header = () => {
           </span>
         </h1>
         <div className="btn">
-          {' '}
-          <a className="contact-btn" href="mailto:princesaral2013@gmail.com">
-            Contact
-          </a>
+          <Link to="contact" spy={true} smooth={true}>
+            <p className="contact-btn">Contact</p>
+          </Link>
         </div>
         <div className="social-media-links">
           <a

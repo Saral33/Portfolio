@@ -20,6 +20,7 @@ const Skills = () => {
       <div style={{ color: '#fff' }} className="section-header">
         Skills
       </div>
+      <div className="wave"></div>
       <div
         data-aos="zoom-in"
         style={{ marginTop: '40px' }}

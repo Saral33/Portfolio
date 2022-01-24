@@ -47,17 +47,18 @@
 }
 
 .contact-btn {
-  background-color: #c0392b;
+  cursor: pointer;
+  background-color: #8e44ad;
   display: inline-block;
   padding: 1.2rem 4rem;
-  color: rgba(255, 235, 205, 0.932);
+  color: #fff;
   text-decoration: none;
   margin-top: 2.5rem;
   font-size: 1.6rem;
   border-radius: 1.5rem;
   transition: all 0.3s;
   &:hover {
-    background-color: #e74c3c;
+    background-color: #8d44add2;
     color: #fff;
     transform: scale(1.2);
   }

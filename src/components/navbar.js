@@ -25,6 +25,7 @@ const Navbar = () => {
             Home
           </Link>
         </li>
+
         <li className="option" onClick={closeMobileMenu}>
           <Link onClick={closeMobileMenu} to="about" spy={true} smooth={true}>
             About
